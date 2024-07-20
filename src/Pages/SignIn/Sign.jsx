@@ -1,10 +1,14 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Sign.css'
 import logo from '../../assets/logo.png'
 import {signin, signup} from '../../firebase'
 import loader from '../../assets/vibeflix-spinner.gif'
 
 const Sign = () => {
+
+  useEffect(() => {
+    document.title = 'VibeFlix - Sign In or Sign Up';
+  }, []);
 
   const [signState, setSignState] = useState("Sign In")
   const [name, setName] = useState("")

@@ -14,13 +14,13 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App () {
 
-  const navigate = useNavigate(1)
+  const navigate = useNavigate()
   
   useEffect(()=>{
 
     onAuthStateChanged(auth, async (user)=> {
       if (user) {
-        navigate(() => {'/' ? '/': 0} )
+        navigate('/')
       } else {
         navigate('/signin')
       }

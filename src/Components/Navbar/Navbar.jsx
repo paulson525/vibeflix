@@ -32,7 +32,7 @@ const Navbar = () => {
 
         <div className="navlinks">
           <ul className={`list ${isOpen ? 'open' : ''}`}>
-            <i onClick={toggleMenu} class="fa-solid fa-xmark"></i>
+            <i onClick={toggleMenu} className="fa-solid fa-xmark"></i>
             <li><NavLink to='/'>Home</NavLink></li>
             <li><NavLink to='/movies'>Movies</NavLink></li>
             <li><NavLink to='/shows'>Shows</NavLink></li>
