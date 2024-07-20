@@ -1,0 +1,145 @@
+.hero{
+    position: relative;
+}
+.hero img{
+    width: 100%;
+    height: 100vh;
+    mask-image: linear-gradient(to top, black 82%,transparent);
+}
+.herodesc{
+    position: absolute;
+    top: 70%;
+    right: 5%;
+    font-size: 16px;
+    font-weight: 500;
+    text-shadow: 0px 3px 2px #000000;
+}
+.heroact{
+    position: absolute;
+    display: flex;
+    top: 85%;
+    right: 15%;
+    gap: 20px;
+}
+.play{
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    background: none;
+}
+.play a{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #e26026;
+    color: #000000;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+}
+.playlink{
+    color: #000000;
+}
+.play a:hover{
+    background: #ffbb2b;
+}
+.minfo{
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    background: none;
+}
+.minfo a{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #777777;
+    color: #ffffff;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+}
+.minfo-link{
+    color: #ffffff;
+
+}
+.minfo a:hover{
+    background: #464646;
+}
+.morecards{
+    padding-bottom: 30px;
+}
+
+/* Media Queries */
+
+@media (max-width: 570px) {
+    .hero img {
+        width: 100%;
+        height: 50vh;
+    }
+    .herodesc{
+        display: none;
+    }
+    .heroact{
+        top: 75%;
+        right: 5%;
+        gap: 10px;
+    }
+    .play a,
+    .minfo a{
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero img {
+        width: 100%;
+        height: 50vh;
+    }
+    .herodesc{
+        display: none;
+    }
+    .heroact{
+        top: 75%;
+        right: 5%;
+        gap: 10px;
+    }
+    .play a,
+    .minfo a{
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 430px) {
+    .hero img {
+        width: 100%;
+        height: 50vh;
+    }
+    .herodesc{
+        display: none;
+    }
+    .heroact{
+        top: 75%;
+        right: 5%;
+        gap: 10px;
+    }
+    .play a,
+    .minfo a{
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+@media (max-width: 350px) {
+    .heroact {
+        top: 80%;
+        right: 17%;
+    }
+}
