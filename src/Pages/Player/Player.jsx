@@ -34,6 +34,7 @@ const Player = () => {
   const goBack = useNavigate() 
 
   return (
+    
     <div className='player'>
       <p className='head'><i onClick={() => goBack(-1)} className="fa-solid fa-chevron-left"></i> {apiData.title}</p>
       <p className="description">{apiData.description}</p>

@@ -7,22 +7,22 @@ import { Link, useNavigate } from 'react-router-dom'
 const Movies = () => {
 
     useEffect(() => {
-      document.title = 'VibeFlix - Movies';
-    }, []);
+      document.title = 'VibeFlix - Movies'
+    }, [])
 
   const [apiData , setApiData] = useState([])
 
   const options = {
     method: 'GET',
     headers: {'X-RapidAPI-Key': 'f36c84815fmsh88ddcdda1db7f57p19dffejsn526864b4d9f1'}
-  };
+  }
 
   useEffect(() => {
 
     fetch(`https://vibeflix-api2.p.rapidapi.com/?category=movie&sort=-blockbuster`, options)
     .then(response => response.json())
     .then(response => setApiData(response.Products))
-    .catch(err => console.error(err));
+    .catch(err => console.error(err))
 
 
   }, [])
