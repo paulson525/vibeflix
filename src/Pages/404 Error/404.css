@@ -1,0 +1,7 @@
+.error .home{
+    color: #e26026;
+    transition: 0.3s ease;
+}
+.home:hover{
+    text-decoration: underline;
+}

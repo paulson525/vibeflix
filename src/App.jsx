@@ -11,6 +11,8 @@ import React, { useEffect, useState } from 'react';
 import { auth } from './firebase';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import NotFound from './Pages/404 Error/404';
+
 
 function App() {
   const navigate = useNavigate();
@@ -44,6 +46,7 @@ function App() {
         <Route path='/player/:title' element={<Player />} />
         <Route path='/search' element={<Search />} />
         <Route path='/signin' element={<Sign />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </div>
   );
